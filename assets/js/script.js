@@ -43,9 +43,9 @@ var loadTasks = function() {
 var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
+
 //Edit A task
 $(".list-group").on("click", "p", function(){
-  
   //this refers to the p
  var text= $(this)
  .text()
@@ -96,7 +96,7 @@ $(".list-group").on("click", "span", function(){
   .text()
   .trim();
 
-  //create new input element
+  //create new input element for date
 var dateInput = $("<input>")
 .attr("type", "text")
 .addClass("form-control")
